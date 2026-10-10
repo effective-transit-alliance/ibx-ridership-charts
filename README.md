@@ -32,7 +32,7 @@ Many sources are as cited in ETA's [IBX Automation report](https://kkysen.github
 | STOPS (2 min peak) | 212,000 | 2045 | Franklin Tang (NYU Marron) using the FTA's [STOPS](https://www.transit.dot.gov/funding/grant-programs/capital-investments/stops) model, as reported in the [IBX Automation report](https://kkysen.github.io/eta-publish/reports/ibx-automation/) |
 | STOPS (5 min peak) | 198,000 | 2045 | Same as above, with the currently stated 5 minute peak headway |
 | SAS West | 164,000 | 2045 | [MTA 125th Street Subway Tunnel Draft Scoping Document (October 2026)](https://www.mta.info/document/222046#page=5), p. 4, from the [125th Street Subway Feasibility Study (December 2025)](https://www.mta.info/document/196361#page=13), p. 12: model recalibrated to a post-pandemic 2024 base year |
-| Current | 160,000 | 2045 | [Governor Hochul's announcement](https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase) of the 2025 design |
+| Current | 160,000 | 2045 | [Governor Hochul's announcement](https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase#:~:text=ridership%20projections%20to-,160%2C000,-per%20day%2C%20up) of the 2025 design |
 | G | 149,000 | 2025 | [NYC subway ridership by line](https://anita.garden/nycriders/): average September 2025 Wednesday |
 | BQE | 130,000 |  | [NYC DOT BQE Central](https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml): vehicles/day |
 | SAS Phase 1 | 128,000 | 2025 | TODO |
