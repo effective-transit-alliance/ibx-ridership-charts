@@ -22,28 +22,29 @@ DEFAULT_COLOR = "#e07b39"
 BAR_H = 28
 GAP = 10
 LABEL_W = 230
+YEAR_W = 50
 CHART_W = 520
 VALUE_W = 70
 TOP = 80
 LEFT = 20
 BOTTOM = 50
-WIDTH = LEFT + LABEL_W + CHART_W + VALUE_W + 20
+WIDTH = LEFT + LABEL_W + YEAR_W + CHART_W + VALUE_W + 20
 FONT = "Helvetica, Arial, sans-serif"
 
 
 def main():
     with open(HERE / "ridership.csv", newline="") as f:
         rows = [
-            (r["label"], float(r["riders_per_day"]), r["group"])
+            (r["label"], float(r["riders_per_day"]), r.get("year", ""), r["group"])
             for r in csv.DictReader(f)
         ]
     rows.sort(key=lambda r: r[1], reverse=True)
 
-    max_val = max(v for _, v, _ in rows)
+    max_val = max(v for _, v, _, _ in rows)
     step = 50000
     axis_max = -(-max_val // step) * step
     height = TOP + len(rows) * (BAR_H + GAP) + BOTTOM
-    x0 = LEFT + LABEL_W
+    x0 = LEFT + LABEL_W + YEAR_W
 
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" '
@@ -54,7 +55,7 @@ def main():
 
     # Legend.
     lx = LEFT
-    groups = list(dict.fromkeys(g for _, _, g in rows))
+    groups = list(dict.fromkeys(g for _, _, _, g in rows))
     for g in groups:
         out.append(f'<rect x="{lx}" y="48" width="14" height="14" rx="2" fill="{COLORS.get(g, DEFAULT_COLOR)}"/>')
         out.append(f'<text x="{lx + 20}" y="60" font-size="14" fill="#333">{escape(g)}</text>')
@@ -73,13 +74,17 @@ def main():
         v += step
 
     # Bars.
-    for i, (label, val, group) in enumerate(rows):
+    for i, (label, val, year, group) in enumerate(rows):
         y = TOP + i * (BAR_H + GAP)
         w = CHART_W * val / axis_max
         cy = y + BAR_H / 2 + 5
         out.append(
-            f'<text x="{x0 - 10}" y="{cy}" font-size="15" fill="#1a1a1a" '
+            f'<text x="{x0 - YEAR_W - 6}" y="{cy}" font-size="15" fill="#1a1a1a" '
             f'text-anchor="end">{escape(label)}</text>'
+        )
+        out.append(
+            f'<text x="{x0 - 10}" y="{cy}" font-size="14" fill="#777" '
+            f'text-anchor="end">{escape(year)}</text>'
         )
         out.append(
             f'<rect x="{x0}" y="{y}" width="{w:.1f}" height="{BAR_H}" rx="3" '
