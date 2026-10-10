@@ -1,13 +1,13 @@
 label,riders_per_day,group
-Feasibility,87800,IBX projection
-PEL,115000,IBX projection
-20YN,118700,IBX projection
-Current,160000,IBX projection
-G,149000,Comparison
-BQE,130000,Comparison
-Hai Yang et al.,254000,IBX projection
-STOPS (5 min peak),198000,IBX projection
-STOPS (2 min peak),212000,IBX projection
-SAS Phase 1,128000,Comparison
-SAS Phase 2,100000,Comparison
-SAS West,164000,Comparison
+Feasibility,87800,IBX Projection
+PEL,115000,IBX Projection
+20YN,118700,IBX Projection
+Current,160000,IBX Projection
+G,149000,Current Ridership
+BQE,130000,Current Ridership
+Hai Yang et al.,254000,IBX Projection
+STOPS (5 min peak),198000,IBX Projection
+STOPS (2 min peak),212000,IBX Projection
+SAS Phase 1,128000,Current Ridership
+SAS Phase 2,100000,Other Projection
+SAS West,164000,Other Projection

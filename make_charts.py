@@ -11,8 +11,12 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 HERE = Path(__file__).parent
-TITLE = "IBX and related ridership (riders/day)"
-COLORS = {"IBX projection": "#2a6fdb", "Comparison": "#9aa3ad"}
+TITLE = "IBX and Related Ridership (average weekday riders)"
+COLORS = {
+    "IBX Projection": "#2a6fdb",
+    "Other Projection": "#8db4f0",
+    "Current Ridership": "#9aa3ad",
+}
 DEFAULT_COLOR = "#e07b39"
 
 BAR_H = 28
