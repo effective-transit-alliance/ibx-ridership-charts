@@ -38,7 +38,7 @@ Many sources are as cited in ETA's [IBX automation report](https://kkysen.github
 | SAS Phase 1 | 128,000 | 2025 | TODO |
 | 20YN | 118,700 | 2045 | [MTA 20-Year Needs Assessment Comparative Evaluation](https://future.mta.info/documents/20-YearNeedsAssessment_ComparativeEvaluation.pdf#page=14), p. 14: model calibrated to 2019 |
 | PEL | 115,000 | 2045 | [MTA](https://www.mta.info/document/103691#page=5), from the [PEL study](https://www.mta.info/document/114891#page=15) |
-| SAS Phase 2 | 100,000 |  | [MTA, "Second Avenue Subway Phase 2: Providing East Harlem with more access to transit" (2026)](https://www.mta.info/document/207446#page=1) |
+| SAS Phase 2 | 111,500 | 2017 | [FTA Capital Investment Grants profile (FY24)](https://www.transit.dot.gov/sites/fta.dot.gov/files/2023-03/NY-New-York-Second-Avenue-Subway-Phase-2-NSE-Profile-FY24.pdf#page=1), p. 1: current year forecast in daily linked trips; the horizon year (2035) forecast is 123,000, and the MTA cites ~100,000 |
 | Feasibility | 87,800 | 2040 | [MTA feasibility study (2022)](https://www.mta.info/document/72081#page=16) (forecast year on [p. 12](https://www.mta.info/document/72081#page=12)) |
 
 ## Generating the Charts
