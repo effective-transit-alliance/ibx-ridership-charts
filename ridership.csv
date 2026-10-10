@@ -6,8 +6,8 @@ Current,160000,,IBX Projection,https://www.governor.ny.gov/news/governor-hochul-
 G,149000,2025,Current Ridership,https://anita.garden/nycriders/
 BQE,130000,,Current Ridership,https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml
 Hai Yang et al.,254000,,IBX Projection,https://arxiv.org/abs/2408.01562
-STOPS (5 min peak),198000,,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
-STOPS (2 min peak),212000,,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
+STOPS (5 min peak),198000,2045,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
+STOPS (2 min peak),212000,2045,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
 SAS Phase 1,128000,2025,Current Ridership,
 SAS Phase 2,100000,,Other Projection,https://www.mta.info/document/207446#page=1
 SAS West,164000,2045,Other Projection,https://www.mta.info/document/222046#page=5
