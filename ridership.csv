@@ -5,7 +5,7 @@ PEL,115000,2045,IBX Projection,https://www.mta.info/document/103691#page=5
 Current,160000,2045,IBX Projection,https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase
 G,149000,2025,Current Ridership,https://anita.garden/nycriders/
 BQE,130000,,Current Ridership,https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml
-Hai Yang et al.,254000,,IBX Projection,https://arxiv.org/abs/2408.01562
+Hai Yang et al.,254000,2023,IBX Projection,https://arxiv.org/abs/2408.01562
 STOPS (5 min peak),198000,2045,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
 STOPS (2 min peak),212000,2045,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
 SAS Phase 1,128000,2025,Current Ridership,
