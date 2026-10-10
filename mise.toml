@@ -1,0 +1,8 @@
+[tools]
+python = "3.15"
+imagemagick = "latest"
+uv = "latest"
+
+[tasks.charts]
+description = "Regenerate ridership.svg and ridership.png from ridership.csv"
+run = "./make_charts.py"
