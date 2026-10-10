@@ -1,13 +1,13 @@
-label,riders_per_day,group,source
-Feasibility,87800,IBX Projection,https://www.mta.info/document/72081#page=16
-PEL,115000,IBX Projection,https://www.mta.info/document/103691#page=5
-20YN,118700,IBX Projection,
-Current,160000,IBX Projection,https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase
-G,149000,Current Ridership,https://anita.garden/nycriders/
-BQE,130000,Current Ridership,https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml
-Hai Yang et al.,254000,IBX Projection,https://arxiv.org/abs/2408.01562
-STOPS (5 min peak),198000,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
-STOPS (2 min peak),212000,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
-SAS Phase 1,128000,Current Ridership,
-SAS Phase 2,100000,Other Projection,
-SAS West,164000,Other Projection,
+label,riders_per_day,year,group,source
+Feasibility,87800,,IBX Projection,https://www.mta.info/document/72081#page=16
+PEL,115000,,IBX Projection,https://www.mta.info/document/103691#page=5
+20YN,118700,2045,IBX Projection,https://future.mta.info/documents/20-YearNeedsAssessment_ComparativeEvaluation.pdf#page=14
+Current,160000,,IBX Projection,https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase
+G,149000,2025,Current Ridership,https://anita.garden/nycriders/
+BQE,130000,,Current Ridership,https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml
+Hai Yang et al.,254000,,IBX Projection,https://arxiv.org/abs/2408.01562
+STOPS (5 min peak),198000,,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
+STOPS (2 min peak),212000,,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
+SAS Phase 1,128000,2025,Current Ridership,
+SAS Phase 2,100000,,Other Projection,https://www.mta.info/document/207446#page=1
+SAS West,164000,,Other Projection,https://www.mta.info/document/222046#page=5

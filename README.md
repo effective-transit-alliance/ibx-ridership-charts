@@ -18,26 +18,28 @@ which sets the bar color:
 - `Current Ridership`: existing lines (G, BQE, SAS Phase 1).
 
 Bars are sorted by ridership, so rows can be in any order.
-An optional `source` column links to where each number comes from.
+An optional `year` column gives the year the ridership is for
+(the forecast year for projections),
+and an optional `source` column links to where each number comes from.
 
 ## Sources
 
-Most sources are as cited in ETA's [IBX automation report](https://kkysen.github.io/eta-publish/reports/ibx-automation/).
+Many sources are as cited in ETA's [IBX automation report](https://kkysen.github.io/eta-publish/reports/ibx-automation/).
 
-| Label | Riders/day | Source |
-| --- | ---: | --- |
-| Hai Yang et al. | 254,000 | [Hai Yang et al.](https://arxiv.org/abs/2408.01562): upper bound, barring land-use changes |
-| STOPS (2 min peak) | 212,000 | Franklin Tang (NYU Marron) using the FTA's [STOPS](https://www.transit.dot.gov/funding/grant-programs/capital-investments/stops) model, as reported in the [IBX automation report](https://kkysen.github.io/eta-publish/reports/ibx-automation/) |
-| STOPS (5 min peak) | 198,000 | Same as above, with the currently stated 5 minute peak headway |
-| SAS West | 164,000 | TODO |
-| Current | 160,000 | [Governor Hochul's announcement](https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase) of the 2025 design |
-| G | 149,000 | [NYC subway ridership by line](https://anita.garden/nycriders/) |
-| BQE | 130,000 | [NYC DOT BQE Central](https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml): vehicles/day |
-| SAS Phase 1 | 128,000 | TODO |
-| 20YN | 118,700 | TODO: 20-Year Needs Assessment comparative evaluation |
-| PEL | 115,000 | [MTA](https://www.mta.info/document/103691#page=5), from the [PEL study](https://www.mta.info/document/114891) |
-| SAS Phase 2 | 100,000 | TODO |
-| Feasibility | 87,800 | [MTA feasibility study (2022)](https://www.mta.info/document/72081#page=16) |
+| Label | Riders/day | Year | Source |
+| --- | ---: | ---: | --- |
+| Hai Yang et al. | 254,000 |  | [Hai Yang et al.](https://arxiv.org/abs/2408.01562): upper bound, barring land-use changes |
+| STOPS (2 min peak) | 212,000 |  | Franklin Tang (NYU Marron) using the FTA's [STOPS](https://www.transit.dot.gov/funding/grant-programs/capital-investments/stops) model, as reported in the [IBX automation report](https://kkysen.github.io/eta-publish/reports/ibx-automation/) |
+| STOPS (5 min peak) | 198,000 |  | Same as above, with the currently stated 5 minute peak headway |
+| SAS West | 164,000 |  | [MTA 125th Street Subway Tunnel Draft Scoping Document (October 2026)](https://www.mta.info/document/222046#page=5), p. 4: preliminary forecast from the 2025 feasibility study |
+| Current | 160,000 |  | [Governor Hochul's announcement](https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase) of the 2025 design |
+| G | 149,000 | 2025 | [NYC subway ridership by line](https://anita.garden/nycriders/): average September 2025 Wednesday |
+| BQE | 130,000 |  | [NYC DOT BQE Central](https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml): vehicles/day |
+| SAS Phase 1 | 128,000 | 2025 | TODO |
+| 20YN | 118,700 | 2045 | [MTA 20-Year Needs Assessment Comparative Evaluation](https://future.mta.info/documents/20-YearNeedsAssessment_ComparativeEvaluation.pdf#page=14), p. 14: model calibrated to 2019 |
+| PEL | 115,000 |  | [MTA](https://www.mta.info/document/103691#page=5), from the [PEL study](https://www.mta.info/document/114891) |
+| SAS Phase 2 | 100,000 |  | [MTA, "Second Avenue Subway Phase 2: Providing East Harlem with more access to transit" (2026)](https://www.mta.info/document/207446#page=1) |
+| Feasibility | 87,800 |  | [MTA feasibility study (2022)](https://www.mta.info/document/72081#page=16) |
 
 ## Generating the Charts
 
