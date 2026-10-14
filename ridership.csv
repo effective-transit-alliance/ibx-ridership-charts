@@ -3,7 +3,7 @@ Feasibility,87800,2040,IBX Projection,https://www.mta.info/document/72081#page=1
 PEL,115000,2045,IBX Projection,https://www.mta.info/document/103691#page=5
 20YN,118700,2045,IBX Projection,https://future.mta.info/documents/20-YearNeedsAssessment_ComparativeEvaluation.pdf#page=14
 Current,160000,2045,IBX Projection,https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase#:~:text=ridership%20projections%20to-,160%2C000,-per%20day%2C%20up
-G,149000,2025,Current Ridership,https://anita.garden/nycriders/
+G,149000,2025,Current Ridership,https://github.com/kkysen/mta-od-data/blob/raptor/src/mta_od_data/ridership/by_route.md
 BQE,130000,,Current Ridership,https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml
 Hai Yang et al.,254000,2023,IBX Projection,https://arxiv.org/abs/2408.01562
 STOPS (5 min peak),198000,2045,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
