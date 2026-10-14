@@ -8,6 +8,6 @@ BQE,130000,,Current Ridership,https://www.nyc.gov/html/dot/html/infrastructure/b
 Hai Yang et al.,254000,2023,IBX Projection,https://arxiv.org/abs/2408.01562
 STOPS (5 min peak),198000,2045,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
 STOPS (2 min peak),212000,2045,IBX Projection,https://kkysen.github.io/eta-publish/reports/ibx-automation/
-SAS Phase 1,128000,2025,Current Ridership,
+SAS Phase 1,141000,2025,Current Ridership,https://github.com/kkysen/mta-od-data/blob/raptor/src/mta_od_data/ridership/by_line.md
 SAS Phase 2,111500,2017,Other Projection,https://www.transit.dot.gov/sites/fta.dot.gov/files/2023-03/NY-New-York-Second-Avenue-Subway-Phase-2-NSE-Profile-FY24.pdf#page=1
 SAS West,164000,2045,Other Projection,https://www.mta.info/document/222046#page=5
