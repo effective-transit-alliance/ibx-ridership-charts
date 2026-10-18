@@ -55,3 +55,8 @@ Run either of:
 ./make_charts.py
 mise run charts
 ```
+
+## License
+
+The data ([`ridership.csv`](ridership.csv)) and charts (`ridership.svg` and `ridership.png`)
+are licensed under [CC BY 4.0](LICENSE-CC-BY-4.0).
