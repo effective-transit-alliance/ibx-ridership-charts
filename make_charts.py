@@ -49,8 +49,15 @@ def main():
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" '
         f'viewBox="0 0 {WIDTH} {height}" font-family="{FONT}">',
-        f'<rect width="100%" height="100%" fill="#ffffff"/>',
-        f'<text x="{LEFT}" y="34" font-size="22" font-weight="bold" fill="#1a1a1a">{escape(TITLE)}</text>',
+        "<style>",
+        ".bg{fill:#ffffff}.grid{stroke:#e3e3e3}",
+        ".t1{fill:#1a1a1a}.t2{fill:#333333}.t3{fill:#666666}.t4{fill:#777777}",
+        "@media (prefers-color-scheme: dark){",
+        ".bg{fill:#1a1a19}.grid{stroke:#2e2e2c}",
+        ".t1{fill:#f2f2f2}.t2{fill:#d6d6d6}.t3{fill:#a8a8a8}.t4{fill:#9a9a9a}}",
+        "</style>",
+        f'<rect class="bg" width="100%" height="100%"/>',
+        f'<text class="t1" x="{LEFT}" y="34" font-size="22" font-weight="bold">{escape(TITLE)}</text>',
     ]
 
     # Legend.
@@ -58,7 +65,7 @@ def main():
     groups = list(dict.fromkeys(g for _, _, _, g in rows))
     for g in groups:
         out.append(f'<rect x="{lx}" y="48" width="14" height="14" rx="2" fill="{COLORS.get(g, DEFAULT_COLOR)}"/>')
-        out.append(f'<text x="{lx + 20}" y="60" font-size="14" fill="#333">{escape(g)}</text>')
+        out.append(f'<text x="{lx + 20}" y="60" font-size="14" class="t2">{escape(g)}</text>')
         lx += 30 + 8 * len(g)
 
     # Gridlines and axis labels.
@@ -66,9 +73,9 @@ def main():
     v = 0
     while v <= axis_max:
         x = x0 + CHART_W * v / axis_max
-        out.append(f'<line x1="{x:.1f}" y1="{TOP - 6}" x2="{x:.1f}" y2="{plot_bottom}" stroke="#e3e3e3"/>')
+        out.append(f'<line x1="{x:.1f}" y1="{TOP - 6}" x2="{x:.1f}" y2="{plot_bottom}" class="grid"/>')
         out.append(
-            f'<text x="{x:.1f}" y="{plot_bottom + 20}" font-size="13" fill="#666" '
+            f'<text x="{x:.1f}" y="{plot_bottom + 20}" font-size="13" class="t3" '
             f'text-anchor="middle">{int(v / 1000)}k</text>'
         )
         v += step
@@ -79,18 +86,18 @@ def main():
         w = CHART_W * val / axis_max
         cy = y + BAR_H / 2 + 5
         out.append(
-            f'<text x="{x0 - YEAR_W - 6}" y="{cy}" font-size="15" fill="#1a1a1a" '
+            f'<text x="{x0 - YEAR_W - 6}" y="{cy}" font-size="15" class="t1" '
             f'text-anchor="end">{escape(label)}</text>'
         )
         out.append(
-            f'<text x="{x0 - 10}" y="{cy}" font-size="14" fill="#777" '
+            f'<text x="{x0 - 10}" y="{cy}" font-size="14" class="t4" '
             f'text-anchor="end">{escape(year)}</text>'
         )
         out.append(
             f'<rect x="{x0}" y="{y}" width="{w:.1f}" height="{BAR_H}" rx="3" '
             f'fill="{COLORS.get(group, DEFAULT_COLOR)}"/>'
         )
-        out.append(f'<text x="{x0 + w + 8:.1f}" y="{cy}" font-size="14" fill="#333">{val:,.0f}</text>')
+        out.append(f'<text x="{x0 + w + 8:.1f}" y="{cy}" font-size="14" class="t2">{val:,.0f}</text>')
 
     out.append("</svg>")
     svg_path = HERE / "ridership.svg"
