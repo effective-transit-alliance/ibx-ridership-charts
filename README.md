@@ -33,8 +33,8 @@ Many sources are as cited in ETA's [IBX Automation report](https://www.etany.org
 | STOPS (5 min peak) | 198,000 | 2045 | Same as above, with the currently stated 5 minute peak headway |
 | SAS West | 164,000 | 2045 | [MTA 125th Street Subway Tunnel Draft Scoping Document (October 2026)](https://www.mta.info/document/222046#page=5), p. 4, from the [125th Street Subway Feasibility Study (December 2025)](https://www.mta.info/document/196361#page=13), p. 12: model recalibrated to a post-pandemic 2024 base year |
 | Current | 160,000 | 2045 | [Governor Hochul's announcement](https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase#:~:text=ridership%20projections%20to-,160%2C000,-per%20day%2C%20up) of the 2025 design |
-| G | 149,000 | 2025 | [`mta-od-data ridership --by route`](https://github.com/kkysen/mta-od-data/blob/raptor/src/mta_od_data/ridership/by_route.md): average weekday, August to December 2025, with fare evasion |
-| SAS Phase 1 | 141,000 | 2025 | [`mta-od-data ridership --by line`](https://github.com/kkysen/mta-od-data/blob/raptor/src/mta_od_data/ridership/by_line.md): average weekday, August to December 2025, with fare evasion |
+| G | 149,000 | 2025 | [`mta-od-data ridership --by route`](https://github.com/kkysen/mta-od-data/blob/main/src/mta_od_data/ridership/by_route.md): average weekday, August to December 2025, with fare evasion |
+| SAS Phase 1 | 141,000 | 2025 | [`mta-od-data ridership --by line`](https://github.com/kkysen/mta-od-data/blob/main/src/mta_od_data/ridership/by_line.md): average weekday, August to December 2025, with fare evasion |
 | BQE | 130,000 |  | [NYC DOT BQE Central](https://www.nyc.gov/html/dot/html/infrastructure/bqecentral.shtml): vehicles/day |
 | 20YN | 118,700 | 2045 | [MTA 20-Year Needs Assessment Comparative Evaluation](https://future.mta.info/documents/20-YearNeedsAssessment_ComparativeEvaluation.pdf#page=14), p. 14: model calibrated to 2019 |
 | PEL | 115,000 | 2045 | [MTA](https://www.mta.info/document/103691#page=5), from the [PEL study](https://www.mta.info/document/114891#page=15) |
