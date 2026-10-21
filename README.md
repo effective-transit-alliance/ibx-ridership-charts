@@ -24,12 +24,12 @@ and an optional `source` column links to where each number comes from.
 
 ## Sources
 
-Many sources are as cited in ETA's [IBX Automation report](https://kkysen.github.io/eta-publish/reports/ibx-automation/).
+Many sources are as cited in ETA's [IBX Automation report](https://www.etany.org/reports/ibx-automation).
 
 | Label | Riders/day | Year | Source |
 | --- | ---: | ---: | --- |
 | Hai Yang et al. | 254,000 | 2023 | [Hai Yang et al.](https://arxiv.org/abs/2408.01562): upper bound, barring land-use changes, using Replica's 2023 synthetic trips (no future forecast) |
-| STOPS (2 min peak) | 212,000 | 2045 | Franklin Tang (NYU Marron) using the FTA's [STOPS](https://www.transit.dot.gov/funding/grant-programs/capital-investments/stops) model, as reported in the [IBX Automation report](https://kkysen.github.io/eta-publish/reports/ibx-automation/) |
+| STOPS (2 min peak) | 212,000 | 2045 | Franklin Tang (NYU Marron) using the FTA's [STOPS](https://www.transit.dot.gov/funding/grant-programs/capital-investments/stops) model, as reported in the [IBX Automation report](https://www.etany.org/reports/ibx-automation#rising-ridership-p4) |
 | STOPS (5 min peak) | 198,000 | 2045 | Same as above, with the currently stated 5 minute peak headway |
 | SAS West | 164,000 | 2045 | [MTA 125th Street Subway Tunnel Draft Scoping Document (October 2026)](https://www.mta.info/document/222046#page=5), p. 4, from the [125th Street Subway Feasibility Study (December 2025)](https://www.mta.info/document/196361#page=13), p. 12: model recalibrated to a post-pandemic 2024 base year |
 | Current | 160,000 | 2045 | [Governor Hochul's announcement](https://www.governor.ny.gov/news/governor-hochul-announces-interborough-express-advancing-planning-active-phase#:~:text=ridership%20projections%20to-,160%2C000,-per%20day%2C%20up) of the 2025 design |
